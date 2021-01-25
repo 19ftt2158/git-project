@@ -1,4 +1,13 @@
 <?php
-echo "Hello world";
-echo "I lied :)";
+    function myTest() {
+        static $x = 0;
+        echo $x;
+        $x++;
+    }
+
+    myTest();
+    echo "<br>";
+    myTest();
+    echo "<br>";
+    myTest();
 ?>
